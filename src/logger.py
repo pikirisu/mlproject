@@ -24,6 +24,6 @@ logging.getLogger().addHandler(console_handler)
 
 logger = logging.getLogger(__name__)
 
-logger.info("Logging system initialized successfully.")    # Normal operation info
-logger.warning("This is a sample warning message.")        # Something unexpected but not fatal
-logger.error("This is a sample error message.")            # Something failed but program can continue
+# logger.info("Logging system initialized successfully.")    # Normal operation info
+# logger.warning("This is a sample warning message.")        # Something unexpected but not fatal
+# logger.error("This is a sample error message.")            # Something failed but program can continue
