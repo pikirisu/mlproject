@@ -19,7 +19,6 @@ console_handler.setLevel(logging.INFO)
 
 console_format = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
 console_handler.setFormatter(console_format)
-
 logging.getLogger().addHandler(console_handler)
 
 logger = logging.getLogger(__name__)
