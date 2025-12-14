@@ -30,7 +30,7 @@ class DataTransformation:
             num_pipeline = Pipeline(
                 steps=[
                     ("imputer",SimpleImputer(strategy="median")),
-                    ("scaler",StandardScaler(with_mean=False))
+                    ("scaler",StandardScaler())
                 ]
             )
             logging.info(f"Numerical Columns: {numerical_columns}")
@@ -38,7 +38,7 @@ class DataTransformation:
                 steps=[
                     ("imputer",SimpleImputer(strategy="most_frequent")),
                     ("one_hot_encoder",OneHotEncoder()),
-                    # ("scaler",StandardScaler())
+                    ("scaler",StandardScaler(with_mean=False))
                 ]   
             )
             logging.info(f"Categorical Column: {categorical_columns}")
