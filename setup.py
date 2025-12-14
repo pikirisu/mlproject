@@ -19,6 +19,7 @@ setup (
     version = '0.0.1',
     author = 'Akshat',
     author_email= 'akshatchaurasia212005@gmail.com',
+    package_dir={"": "src"},
     packages = find_packages(where="src"),
     install_requires = get_requirements('requirements.txt')
 )
